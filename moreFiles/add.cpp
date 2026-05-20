@@ -1,4 +1,5 @@
 #include<iostream>
+#include "add.h"
 #define DONGBEI
 
 #ifdef DONGBEI //从这里开始编译
