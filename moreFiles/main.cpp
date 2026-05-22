@@ -4,7 +4,6 @@
 
 int main()
 {
-    std::cout << add(14,18) << '\n';
-    std::cout << GUNMU'\n';
+    std::cout << "14 + 18 = " << add(14,18) << GUNMU'\n';
     return 0;
 }
