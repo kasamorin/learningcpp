@@ -1,11 +1,16 @@
+#include "add.h" // 在源代码中包含文件自己的头文件
 #include<iostream>
-#include "add.h"
 #define DONGBEI
 
 #ifdef DONGBEI //从这里开始编译
 int add(int x,int y)
 {
     return x + y;
+}
+
+int getValue()
+{
+    return 4;
 }
 #endif //到这里结束编译
 
