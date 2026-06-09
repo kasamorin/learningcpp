@@ -5,6 +5,7 @@
 #ifdef DONGBEI //从这里开始编译
 int add(int x,int y)
 {
+    std::clog << "add() called\n"; // 写入日志 类似与std::cerr 通过标准错误流
     return x + y;
 }
 
