@@ -1,4 +1,6 @@
 #include "add.h"
+#include <plog/Log.h> 
+#include <plog/Initializers/RollingFileInitializer.h> // 第三方日志记录库
 #include <iostream>
 #define GUNMU
 
@@ -15,6 +17,9 @@
 
 int main()
 {
+    plog::init(plog::debug, "Logfile.txt");
+    PLOGD << "main() called\n";
+
     std::cout << "14 + 18 = " << add(14,18) << GUNMU'\n';
     std::cout << "段错误（核心已转存 [doge] ）" << '\n';
     std::cout << getValue() << '\n';
