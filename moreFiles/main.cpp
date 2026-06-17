@@ -17,8 +17,7 @@
 
 int main()
 {
-    plog::init(plog::debug, "Logfile.txt");
-    PLOGD << "main() called\n";
+    plog::init(plog::debug, "Logfile.txt"); // 初始化plog并指定输出文件
 
     std::cout << "14 + 18 = " << add(14,18) << GUNMU'\n';
     std::cout << "段错误（核心已转存 [doge] ）" << '\n';
