@@ -1,2 +1,4 @@
 Logfile.txt
 *.out
+.vscode
+launch.json

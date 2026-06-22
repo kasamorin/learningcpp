@@ -3,7 +3,7 @@
 #include <plog/Initializers/RollingFileInitializer.h> // 第三方日志记录库
 #include <iostream>
 #define GUNMU
-#define ENABLE_DEBUG
+#define ENABLE_DEBUG // 注释该行即可取消下方基于宏的调试
 
 /*
 要尽量提高编译器发现缺失include的概率，建议按以下顺序排列#includes：
