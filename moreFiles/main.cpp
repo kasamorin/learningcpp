@@ -3,6 +3,7 @@
 #include <plog/Initializers/RollingFileInitializer.h> // 第三方日志记录库
 #include <iostream>
 #define GUNMU
+#define ENABLE_DEBUG
 
 /*
 要尽量提高编译器发现缺失include的概率，建议按以下顺序排列#includes：
@@ -22,5 +23,9 @@ int main()
     std::cout << "14 + 18 = " << add(14,18) << GUNMU'\n';
     std::cout << "段错误（核心已转存 [doge] ）" << '\n';
     std::cout << getValue() << '\n';
+#ifdef ENABLE_DEBUG
+std::cerr << "一种基础的调试方法，使用宏\n";
+std::clog << "写入标准错误流的输出\n";
+#endif
     return 0;
 }
